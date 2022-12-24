@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>GitHub App</title>
+</head>
+<body class="h-50 p-0 m-0 overflow-auto">
+    <header class="w-100">
+        <h1 class="app-title">GitHub</h1>
+    </header>
+    <main class="container-fluid d-flex p-5">
+        <div class="container justify-content-center w-50">
+            <div class="card" style="width: 20rem;">
+                <div class="card-header h4 fw-bold">Search by Username</div>
+                <div class="card-body">
+                    <form id="user-form">
+                        <label class="form-label">Username</label>
+                        <input class="form-control mb-2" id="username" type="text" placeholder="type a GitHub username...">
+                        <p id="alert" class="text-danger"></p>
+                        <button type="submit" class="btn btn-dark w-100">Get Repos</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card mt-5" style="width: 20rem;">
+                <div class="card-header h4 fw-bold">Fetch Repos by Language</div>
+                <div class="card-body languages">
+                    <button data-lng="ruby" class="btn btn-secondary w-100 my-1">Ruby</button>
+                    <button data-lng="python" class="btn btn-secondary w-100 my-1">Python</button>
+                    <button data-lng="javascript" class="btn btn-secondary w-100 my-1">JavaScript</button>
+                    <button data-lng="html" class="btn btn-secondary w-100 my-1">HTML</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid w-50 pb-5 m-0">
+            <div id="search-term" class="my-1">
+
+            </div>
+
+            <div class="border-bottom p-3 h3 fw-bold">Repositories List</div>
+            <div id="repos-list" class="w-100 overflow-auto h-50 m-3 p-3">
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>

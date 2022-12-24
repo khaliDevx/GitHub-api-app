@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+:root{
+    --grayColor: #ccdad1;
+    --darkGray: #111;
+}
+
+header{
+    background-color: var(--darkGray);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.app-title{
+    background-color: #222222;
+    font-size: 35px;
+    color: #fff;
+    padding: 3px 10px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px#333;
+}
+
